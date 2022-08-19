@@ -1,0 +1,11 @@
+﻿<h2>Basic file upload</h2>
+
+@using (Html.BeginForm("Index", "FileUpload",FormMethod.Post,new {enctype="multipart/form-data"})){
+    <label for="file">Upload Image :  </label>
+    <input type="file" name="file" id="file"/>
+    <br /> <br />
+    <input type="submit" value="Upload image"/> 
+    <br /><br />
+    @ViewBag.Message 
+    <br />
+}

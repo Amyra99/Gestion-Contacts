@@ -1,0 +1,178 @@
+
+html {
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 0px;
+}
+.c {
+    color: black;
+    text-decoration: none;
+  
+ }
+
+    .c:visited {
+        color: black;
+        text-decoration:none;
+     }
+    .b{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 90%;
+    height: 60px;
+    width: 180px;
+    background: rgb(115,23,154);
+    background: linear-gradient(90deg, rgba(115,23,154,0.908000700280112) 0%, rgba(133,13,163,0.8631827731092436) 35%, rgba(255,0,155,1) 100%);
+}
+    .b:hover {
+        background: rgb(158,50,204);
+        background: linear-gradient(90deg, rgba(158,50,204,0.908000700280112) 0%, rgba(182,25,222,0.8631827731092436) 35%, rgba(252,89,188,1) 100%);
+    }
+.bg {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.main{
+    width:100%;
+    height:150vh;
+    display:flex;
+    text-align:center;
+}
+.menu {
+    width: 20%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,133,1) 100%);
+}
+#logo{
+    color:rgb(238,174,202);
+    font-size:30px;
+    letter-spacing:4px;
+    padding:15px; 
+    background-color:antiquewhite;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    display: list-item;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.menu a:hover{
+    background-color:coral;
+    transition:0.5s;
+    letter-spacing:4px;
+    text-transform:uppercase; 
+
+}
+
+.d {
+    width:1000px;
+}
+.be {
+    height: 50px;
+    width: 140px;
+    background: rgb(24,236,130);
+    background: radial-gradient(circle, rgba(24,236,130,1) 0%, rgba(195,87,120,1) 100%);
+}
+    .be:hover {
+        transform: scale(1.09);
+    }
+    .ce {
+        color: black;
+        text-decoration: none;
+        background: rgb(105,204,205);
+        background: linear-gradient(0deg, rgba(105,204,205,1) 0%, rgba(190,106,142,1) 100%);
+        transition: transform .2s;
+    }
+    .ce:hover {
+        transform: scale(1.03);
+       
+        
+        color: black;
+        text-decoration: none;
+    }
+.t {
+    background: transparent;
+     border: #b666d2  dashed;
+}
+.t:hover {
+    background: transparent;
+     border: #b666d2 solid;
+}
+.l {
+    margin-left: -90%;
+    color: purple;
+}
+  .m{
+      margin-left:15%;
+  }
+.bt {
+    height: 50px;
+    width: 140px;
+    background: rgb(241,39,98);
+    background: radial-gradient(circle, rgba(241,39,98,1) 40%, rgba(203,101,143,1) 63%, rgba(189,123,205,1) 100%);
+}
+.bt:hover {
+    transform: scale(1.09);
+}
+
+
+.bd {
+    height: 35px;
+    width: 180px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    background: rgb(212,102,156);
+    background: radial-gradient(circle, rgba(212,102,156,1) 40%, rgba(196,102,141,1) 63%, rgba(189,123,205,1) 100%);
+}
+    .bd:hover {
+        transform: scale(1.09);
+        text-decoration: none;
+        color: black;
+    }
+    .bd a {
+        text-decoration: none;
+        color: black;
+    }
+
+.no {
+    text-decoration: none;
+    color: black;
+    cursor: help;
+}
+    .no:hover {
+        text-decoration: none;
+        color: black;
+        cursor: help;
+     }
+
+.h {
+}
+
+    .h:hover {
+        background: orange;
+        color: black;
+        opacity: 0.5
+    }
+
+
+        .x{
+            margin-left: 160px;
+          }

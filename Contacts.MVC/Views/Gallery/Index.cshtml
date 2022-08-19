@@ -1,0 +1,51 @@
+﻿
+@{
+        ViewData["Title"] = "Index";
+}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+</head>
+ <body class="bg">
+@model  List<string>
+<div class="container">
+    <div class="d row">
+        @foreach (var imagePath in Model)
+        {               
+
+            <div class="col-md-3">
+                  
+                <div class="alert alert-success" role="alert">
+                    <a href="/Gallery/DownloadFile/?filePath=@imagePath">
+                   <img src="~/@imagePath" height="200" width="200" /> </a>
+               
+               </div>
+               
+
+            </div>
+        }
+
+    </div>
+
+
+
+        @using (Html.BeginForm ("Index", "Gallery", FormMethod.Post, new { enctype = "multipart/form-data" } ))
+            {
+                <br> <br>
+                <div class="row"> 
+                <div class="form-group col-md-6">
+                <input type="file" class="form-control btn btn-danger" name="myFile"/>
+                 </div>
+
+                    <div class="form-group col-md-1">
+                 <input type="submit" class="btn btn-dark"  name="filesubmit" value="Upload" />
+                 </div>
+
+        </div>   }
+        
+ 
+
+</div>
+</body>

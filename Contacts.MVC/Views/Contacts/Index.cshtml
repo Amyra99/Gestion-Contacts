@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Models.Contact>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+    <br />
+    <body class="bg">
+
+<center><h1><font color="purple">Liste des Contacts</font></h1></center>
+
+
+<p>
+   <button class="  b"> <a asp-action="Create" class="c"><b>Create New Contact</b></a></button>
+</p>
+<table class="table m">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="h">  
+            <td >
+               <a asp-route-id="@item.ContactId" asp-action="Edit" class="no"> @Html.DisplayFor(modelItem => item.Firstname)</a>
+            </td>
+            <td>
+              <a asp-route-id="@item.ContactId" asp-action="Edit"class="no">@Html.DisplayFor(modelItem => item.Lastname)</a>  
+            </td>
+            <td>
+              <a asp-route-id="@item.ContactId" asp-action="Edit"class="no"> @Html.DisplayFor(modelItem => item.Phone)</a> 
+            </td>
+            <td>
+              <a asp-route-id="@item.ContactId" asp-action="Edit"class="no">   @Html.DisplayFor(modelItem => item.Email) </a>
+            </td>
+            <td>
+              <a asp-route-id="@item.ContactId" asp-action="Edit"class="no">   @Html.DisplayFor(modelItem => item.Address) </a>
+            </td>
+            <td > 
+              
+                 <a asp-action="Details" class="btn btn-warning x"  asp-route-id="@item.ContactId">Details</a>   
+                 </td> 
+                 <td class="x">
+                <a asp-action="Delete"class="btn btn-danger" asp-route-id="@item.ContactId">Delete</a>
+             </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
